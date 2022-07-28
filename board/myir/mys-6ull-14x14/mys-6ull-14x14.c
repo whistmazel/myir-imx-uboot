@@ -133,6 +133,59 @@ static iomux_v3_cfg_t const uart1_pads[] = {
 	MX6_PAD_UART1_RX_DATA__UART1_DCE_RX | MUX_PAD_CTRL(UART_PAD_CTRL),
 };
 
+static iomux_v3_cfg_t const wifi_rst_pads[] = {
+			MX6_PAD_LCD_DATA00__GPIO3_IO05 | MUX_PAD_CTRL(NO_PAD_CTRL),
+};
+/*Digital input*/
+static iomux_v3_cfg_t const digital_input_pads[] = {
+			MX6_PAD_SNVS_TAMPER8__GPIO5_IO08 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER7__GPIO5_IO07 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER6__GPIO5_IO06 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER5__GPIO5_IO05 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER4__GPIO5_IO04 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER3__GPIO5_IO03 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER2__GPIO5_IO02 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_SNVS_TAMPER1__GPIO5_IO01 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_UART2_TX_DATA__GPIO1_IO20 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_UART2_RX_DATA__GPIO1_IO21 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_UART3_CTS_B__GPIO1_IO26 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_ENET2_TX_CLK__GPIO2_IO14 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_ENET2_RX_ER__GPIO2_IO15 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_ENET2_TX_DATA0__GPIO2_IO11 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA06__GPIO3_IO11 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA01__GPIO3_IO06 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA02__GPIO3_IO07 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA03__GPIO3_IO08 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA04__GPIO3_IO09 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA10__GPIO3_IO15 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA12__GPIO3_IO17 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA13__GPIO3_IO18 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA14__GPIO3_IO19 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA15__GPIO3_IO20 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA16__GPIO3_IO21 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA17__GPIO3_IO22 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA18__GPIO3_IO23 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA19__GPIO3_IO24 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA20__GPIO3_IO25 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA21__GPIO3_IO26 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA22__GPIO3_IO27 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_DATA23__GPIO3_IO28 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_RESET__GPIO3_IO04 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_VSYNC__GPIO3_IO03 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_ENABLE__GPIO3_IO01 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_LCD_CLK__GPIO3_IO00 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_NAND_DQS__GPIO4_IO16 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_NAND_CE1_B__GPIO4_IO14 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_DATA07__GPIO4_IO28 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_DATA06__GPIO4_IO27 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_DATA05__GPIO4_IO26 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_DATA04__GPIO4_IO25 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_DATA03__GPIO4_IO24 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_VSYNC__GPIO4_IO19 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_PIXCLK__GPIO4_IO18 | MUX_PAD_CTRL(NO_PAD_CTRL),
+			MX6_PAD_CSI_MCLK__GPIO4_IO17 | MUX_PAD_CTRL(NO_PAD_CTRL),
+};
+
 static void setup_iomux_uart(void)
 {
 	imx_iomux_v3_setup_multiple_pads(uart1_pads, ARRAY_SIZE(uart1_pads));
@@ -254,16 +307,16 @@ int board_phy_config(struct phy_device *phydev)
 #endif
 
 #ifdef CONFIG_DM_VIDEO
-static iomux_v3_cfg_t const lcd_pads[] = {
+//static iomux_v3_cfg_t const lcd_pads[] = {
 	/* Use GPIO for Brightness adjustment, duty cycle = period. */
-	MX6_PAD_GPIO1_IO08__GPIO1_IO08 | MUX_PAD_CTRL(NO_PAD_CTRL),
-};
+//	MX6_PAD_GPIO1_IO08__GPIO1_IO08 | MUX_PAD_CTRL(NO_PAD_CTRL),
+//};
 
 static int setup_lcd(void)
 {
 	enable_lcdif_clock(LCDIF1_BASE_ADDR, 1);
 
-	imx_iomux_v3_setup_multiple_pads(lcd_pads, ARRAY_SIZE(lcd_pads));
+	//imx_iomux_v3_setup_multiple_pads(lcd_pads, ARRAY_SIZE(lcd_pads));
 
 	/* Reset the LCD */
 	gpio_request(IMX_GPIO_NR(5, 9), "lcd reset");
@@ -272,8 +325,8 @@ static int setup_lcd(void)
 	gpio_direction_output(IMX_GPIO_NR(5, 9) , 1);
 
 	/* Set Brightness to high */
-	gpio_request(IMX_GPIO_NR(1, 8), "backlight");
-	gpio_direction_output(IMX_GPIO_NR(1, 8) , 1);
+	//gpio_request(IMX_GPIO_NR(1, 8), "backlight");
+	//gpio_direction_output(IMX_GPIO_NR(1, 8) , 1);
 
 	return 0;
 }
@@ -290,6 +343,14 @@ int board_early_init_f(void)
 
 int board_init(void)
 {
+	/* WiFi RST */
+	imx_iomux_v3_setup_multiple_pads(wifi_rst_pads, ARRAY_SIZE(wifi_rst_pads));
+	gpio_request(IMX_GPIO_NR(3, 5), "rst");
+	gpio_direction_output(IMX_GPIO_NR(3, 5) , 0);
+	udelay(150000);
+	gpio_direction_output(IMX_GPIO_NR(3, 5) , 1);
+	/*Digital input*/
+	imx_iomux_v3_setup_multiple_pads(digital_input_pads, ARRAY_SIZE(digital_input_pads));
 	/* Address of boot parameters */
 	gd->bd->bi_boot_params = PHYS_SDRAM + 0x100;
 

@@ -728,7 +728,8 @@ dtb-$(CONFIG_MX6ULL) += \
 	imx6ulz-14x14-evk-emmc.dtb \
 	imx6ulz-14x14-evk-gpmi-weim.dtb \
 	mys-6ull-14x14-emmc.dtb \
-	mys-6ull-14x14-gpmi-weim.dtb
+	mys-6ull-14x14-gpmi-weim.dtb \
+	c404-6ull-gpmi-weim.dtb
 
 dtb-$(CONFIG_ARCH_MX6) += \
 	imx6-apalis.dtb \
